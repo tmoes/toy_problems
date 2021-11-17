@@ -11,8 +11,6 @@
  * rotatedArraySearch([4, 5, 6, 0, 1, 2, 3], 2) === 5
  *
  * rotatedArraySearch([4, 5, 6, 0, 1, 2, 3], 100) === null
- *
- * Target time complexity: O(log(array.length))
  */
 
 var rotatedArraySearch = function (rotated, target) {
@@ -21,6 +19,8 @@ var rotatedArraySearch = function (rotated, target) {
 
   var idx = rotated.indexOf(target);
   return idx === -1 ? null : idx;
+
+  // Splitting the array in two and searching both halves
 
   // if (idx === -1) {
   //   return null;
