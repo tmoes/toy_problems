@@ -6,7 +6,6 @@
  */
 
  var firstNonRepeatedCharacter = function(string, prevChar) {
-  // TODO: your solution here
   if (typeof string !== 'string') {
     return null;
   }
